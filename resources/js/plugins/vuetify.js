@@ -1,0 +1,24 @@
+import Vue from 'vue'
+import Vuetify from 'vuetify/lib'
+import colors from 'vuetify/lib/util/colors'
+
+Vue.use(Vuetify)
+
+const options = {
+    theme: {
+        dark: false,
+        themes: {
+            light: {
+                primary: colors.lightBlue.base,
+                secondary: colors.orange.base,
+                accent: colors.blue.base,
+                error: colors.red.base,
+                warning: colors.deepOrange.base,
+                info: colors.cyan.base,
+                success: colors.green.base
+            }
+        }
+    }
+}
+
+export default new Vuetify(options)
