@@ -9,7 +9,7 @@ Vue.use(InertiaPlugin)
 
 const el = document.getElementById('app')
 
-const initialPage = JSON.parse(app.dataset.page);
+const initialPage = JSON.parse(el.dataset.page);
 
 window.eventBus = new Vue()
 
